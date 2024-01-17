@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(115, 30, 165);
+}
+
+.logo {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.nav-items ul {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-items ul li {
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.body {
+  padding: 15px;
+}
+
+.filter {
+  margin: 20px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:focus,
+button:hover {
+  color: #000;
+  outline: 0;
+}
+
+.filter-btn {
+  border-color: #f1c40f;
+  color: #000;
+  background: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: all 1s ease-in-out;
+}
+
+.filter-btn:hover {
+  background-position: 0;
+}
+
+.res-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.res-card {
+  width: 300px;
+  height: 300px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.res-card:hover {
+  transform: scale(0.95);
+}
+
+.res-logo {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.res-name {
+  font-size: 1rem;
+}
+
+.res-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.res-star {
+  width: 18px;
+}
+
+.res-items {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.res-location {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.BodyContainer {
+  margin: 2rem auto 2rem auto;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.SearchBar {
+  font-size: 1rem;
+  width: 300px;
+  padding: 0 2rem;
+}
+
+.TopBtn {
+  font-size: 1rem;
+  padding: 1.8rem;
+}
+
+.ResContainer {
+  margin: 3rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 50px;
+}
+
+.ErrorContainer {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ErrorType {
+  font-size: 3rem;
+}
+
+.ErrorStat {
+  color: red;
+}
+
+.ErrorMsg {
+  font-size: 1.5rem;
+}
+
+.Navigate {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.Button {
+  cursor: pointer;
+  background-color: white;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+}
+
+.Header {
+  background-color: #1a1a1a;
+  padding: 1rem;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.NavItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.NavItems li a {
+  font-size: 1rem;
+  color: white;
+}
+
+.ResItem {
+  width: 360px;
+  height: 330px;
+  transition: transform 0.4s;
+  color: black;
+}
+
+.ResItem:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+.ResTitle {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.ResImg {
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.ResRating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.ResStarImg {
+  width: 20px;
+}
+
+.ResRating > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.ResCuisines {
+  font-size: 0.9rem;
+  color: rgba(2, 6, 12, 0.6);
+}
+
+.ResLocal {
+  font-size: 0.9rem;
+  color: rgba(2, 6, 12, 0.6);
+}
+
+.MenuItemContainer {
+  padding: 20px;
+}
+
+.MenuCategory {
+  cursor: pointer;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MenuItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.MenuLeft {
+  width: 700px;
+}
+
+.MenuItemName {
+  font-size: 15px;
+  margin-right: 4px;
+  font-weight: 600;
+  color: #3e4152;
+}
+
+.MenuItemPrice {
+  color: #3e4152;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.MenuItemPrice::before {
+  content: "\20B9";
+  margin-right: 0.1rem;
+}
+
+.MenuItemDesc {
+  font-size: 14px;
+  margin-top: 10px;
+  color: rgba(40, 44, 63, 0.45);
+}
+
+.MenuRight {
+  width: 118px;
+  height: 96px;
+  position: relative;
+}
+
+.MenuRight img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.MenuAddBtn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+
+.Divider {
+  border-bottom: 0.5px solid #d3d3d3;
+  margin: 30px 0 30px 0;
+}
+
+.ShimmerButtons {
+  margin: 2rem auto 0 auto;
+}
+
+.ShimmerMenu {
+  margin: 3rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ShimmerMenuRight {
+  width: 110px;
+}
+
